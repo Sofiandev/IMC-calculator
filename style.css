@@ -1,0 +1,81 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Lato, Helvetica, sans-serif;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #f1f1f1;
+  height: 40vh;
+  width: 40%;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px 1px #878787;
+  transition: 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+
+.container h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+}
+
+label {
+  font-size: 13px;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px 1px #878787;
+}
+
+button {
+  margin: 18px;
+  padding: 6px;
+  background: #f7c655;
+  border: 1px solid #ffb303;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+#result {
+  font-size: 23px;
+  margin: 5px;
+}
